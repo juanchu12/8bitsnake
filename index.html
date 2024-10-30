@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 id="title">Snake Game</h1>
+        <div id="controls" class="my-3">
+            <label for="difficulty" id="chooseDifficulty" class="mr-2">Choose Difficulty:</label>
+            <select id="difficulty" class="custom-select w-auto d-inline">
+                <option value="1">Easy</option>
+                <option value="2">Normal</option>
+                <option value="3">Hard</option>
+                <option value="4">Expert</option>
+                <option value="5">Insane</option>
+            </select>
+            <button id="startBtn" class="btn btn-primary ml-2">Start Game</button>
+        </div>
+        <canvas id="gameCanvas" width="400" height="400" class="border"></canvas>
+    </div>
+    <div class="position-absolute" style="bottom: 20px; right: 20px;">
+        <select id="language" class="custom-select" onchange="changeLanguage()">
+            <option value="en">🇬🇧 English</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="zh">🇨🇳 中文</option>
+            <option value="jp">🇯🇵 日本語</option>
+            <option value="ru">🇷🇺 Русский</option>
+            <option value="it">🇮🇹 Italiano</option>
+            <option value="ko">🇰🇷 한국어</option>
+            <!-- More Languages soon -->
+        </select>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="locale.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
